@@ -1,0 +1,48 @@
+GET /users
+
+{
+    "users": [
+        {
+            "id": 1,
+            "link": "/users/1"
+        }
+    ]
+}
+
+GET /users/1
+
+{
+    "id": 1,
+    "firstName": "Franco",
+    "lastName": "Negrete"
+}
+
+201 CREATED
+
+{
+    "id": 1
+}
+
+POST /users/1/POST
+
+{
+    "post": {
+        "title": "que bueno esta rest"
+    }
+}
+
+PATCH /users/1
+
+{
+    "firstName": "Franco"
+}
+
+PUT /users/1
+
+{
+    "firstName": "Franco",
+    "lastName": "Negrete"
+}
+
+DELETE /users/1
+

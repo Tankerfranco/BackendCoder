@@ -6,8 +6,6 @@ function getRandom () {
     return Math.round(Math.random()*3)
 }
 
-
-
 app.get('/', (req, res) => {
     res.send('Hola mundo');
 })
