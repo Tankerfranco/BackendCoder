@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body style="background-color: lightblue; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+    <h1>Agregar productos</h1>
+    <form action="/productos" method="POST">
+        <input type="text" name="title" placeholder="title">
+        <input type="text" name="thumbnail" placeholder="thumbnail">
+        <input type="number" name="price" placeholder="price">
+        <hr>
+        <input type="submit" value="Cargar producto">
+        <button>
+            <a href="http://localhost:8080/productos" style="text-decoration:none; color: black">Ver productos</a>
+        </button>
+    </form>
+    
+</body>
+
+</html>
